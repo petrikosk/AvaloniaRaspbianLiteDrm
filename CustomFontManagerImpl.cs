@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Avalonia.Media;
 using Avalonia.Platform;
 using Avalonia.Skia;
@@ -19,7 +16,7 @@ namespace AvaloniaRaspbianLiteDrm
 
         //Load font resources in the project, you can load multiple font resources
         private readonly Typeface _defaultTypeface =
-            new Typeface("resm:AvaloniaApplication1.Assets.Fonts.msyh#微软雅黑");
+            new Typeface("resm:AvaloniaApplication1.Assets.Fonts.msyh");
 
         public CustomFontManagerImpl()
         {
@@ -72,7 +69,7 @@ namespace AvaloniaRaspbianLiteDrm
             switch (typeface.FontFamily.Name)
             {
                 case FontFamily.DefaultFontFamilyName:
-                case "微软雅黑": //font family name
+                case "oma": //font family name
                     skTypeface = SKTypeface.FromFamilyName(_defaultTypeface.FontFamily.Name);
                     break;
                 default:
