@@ -20,7 +20,6 @@ namespace AvaloniaRaspbianLiteDrm
                 SilenceConsole();
                 return builder.StartLinuxDrm(args);
             }
-
             return builder.StartWithClassicDesktopLifetime(args);
         }
 

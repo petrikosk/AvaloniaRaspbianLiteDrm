@@ -24,11 +24,11 @@ namespace AvaloniaRaspbianLiteDrm
 
             base.OnFrameworkInitializationCompleted();
         }
-        public override void RegisterServices()
+        /*public override void RegisterServices()
         {
             AvaloniaLocator.CurrentMutable.Bind<IFontManagerImpl>().ToConstant(new CustomFontManagerImpl());
             base.RegisterServices();
-        }
+        }*/
     }
     
 
